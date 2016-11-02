@@ -46,8 +46,6 @@ public class TicTacToe{
 			column = 2;
 		else return false;
 
-		System.out.println(column);
-
 		if(s.charAt(0) == 'a' || s.charAt(0) == 'A')
 		{
 			if(board[0][column] == ' ')
@@ -177,15 +175,12 @@ public class TicTacToe{
 				move = in.next();
 			}
 
-
 			//Loop while the method play does not return true when given their move.
 			//Body of loop should ask for a different move
-
 
 			//If the game is won, call break;
 			if(game.won())
 				break;
-
 
 			//Switch the turn
 			game.switchTurn();
@@ -198,5 +193,4 @@ public class TicTacToe{
 			System.out.println("Stalemate");
 		}
 	}
-
 }
