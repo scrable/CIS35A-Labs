@@ -98,6 +98,24 @@ public class TicTacToe{
         * should return true if the current player has 3 in-a-row
 		* in any row, column or diagonal. Otherwise, return false.
 		*/
+
+		//check horizontal win
+		for(int i = 0; i < 3; i++)
+			if(board[i][0] != ' ' && board[i][0] == board[i][1] && board[i][0] == board[i][2])
+				return true;
+
+		//check vertical Wins
+		for(int i = 0; i < 3; i++)
+			if(board[0][i] != ' ' && board[0][i] == board[1][i] && board[0][i] == board[2][i])
+				return true;
+
+		//check top left to bottom right Wins
+		if(board[0][0] != ' ' && board[0][0] == board[1][1] && board[0][0] == board[2][2])
+			return true;
+		//check top right to bottom left
+		if(board[0][2] != ' ' && board[0][2] == board[1][1] && board[0][2] == board[2][0])
+			return true;
+
 		return false; // TODO: replace with your own return statement.
 	}
 
@@ -165,9 +183,12 @@ public class TicTacToe{
 
 
 			//If the game is won, call break;
+			if(game.won())
+				break;
 
 
 			//Switch the turn
+			game.switchTurn();
 
 		}
 		game.print();
