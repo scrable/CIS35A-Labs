@@ -35,45 +35,6 @@ public class TicTacToe{
 		* play logic, and replace the return with your
 		* own.
 		*/
-		// if(s.charAt(0) == 'a' || s.charAt(0) == 'A' && s.charAt(1) == 1)
-		// {
-		// 	if(board[0][0] == ' ')
-		// 	{
-		// 		board[0][0] = player;
-		// 		return true;
-		// 	}
-		// 	else
-		// 		return false;
-		// }
-
-
-			// for(int j = 0; j < 3; j++)
-			// {
-			// 	if(s.charAt(0) == 'a' || s.charAt(0) == 'A' && s.charAt(1) == j + 1)
-			// 	{
-			// 		if(board[0][j] == ' ')
-			// 		{
-			// 			board[0][j] = player;
-			// 			return true;
-			// 		}
-			// 	}
-			// 	else if(s.charAt(0) == 'b' || s.charAt(0) == 'B' && s.charAt(1) == j + 1)
-			// 	{
-			// 		if(board[1][j] == ' ')
-			// 		{
-			// 			board[1][j] = player;
-			// 			return true;
-			// 		}
-			// 	}
-			// 	else if(s.charAt(0) == 'c' || s.charAt(0) == 'C' && s.charAt(1) == j + 1)
-			// 	{
-			// 		if(board[2][j] == ' ')
-			// 		{
-			// 			board[2][j] = player;
-			// 			return true;
-			// 		}
-			// 	}
-			// }
 			char charColumn = s.charAt(1);
 			char charRow = s.charAt(0);
 			int column;
