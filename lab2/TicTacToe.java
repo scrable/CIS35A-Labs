@@ -35,47 +35,45 @@ public class TicTacToe{
 		* play logic, and replace the return with your
 		* own.
 		*/
-			char charColumn = s.charAt(1);
-			char charRow = s.charAt(0);
-			int column;
-			int row;
+		char charColumn = s.charAt(1);
+		int column;
 
-			if(charColumn == '1')
-				column = 0;
-			else if(charColumn == '2')
-				column = 1;
-			else if(charColumn == '3')
-				column = 2;
-			else return false;
+		if(charColumn == '1')
+			column = 0;
+		else if(charColumn == '2')
+			column = 1;
+		else if(charColumn == '3')
+			column = 2;
+		else return false;
 
-			System.out.println(column);
+		System.out.println(column);
 
-			if(s.charAt(0) == 'a' || s.charAt(0) == 'A')
+		if(s.charAt(0) == 'a' || s.charAt(0) == 'A')
+		{
+			if(board[0][column] == ' ')
 			{
-				if(board[0][column] == ' ')
-				{
-					board[0][column] = player;
-					return true;
-				}
+				board[0][column] = player;
+				return true;
 			}
-			if(s.charAt(0) == 'b' || s.charAt(0) == 'B')
+		}
+		if(s.charAt(0) == 'b' || s.charAt(0) == 'B')
+		{
+			if(board[1][column] == ' ')
 			{
-				if(board[1][column] == ' ')
-				{
-					board[1][column] = player;
-					return true;
-				}
+				board[1][column] = player;
+				return true;
 			}
-			if(s.charAt(0) == 'c' || s.charAt(0) == 'C')
+		}
+		if(s.charAt(0) == 'c' || s.charAt(0) == 'C')
+		{
+			if(board[2][column] == ' ')
 			{
-				if(board[2][column] == ' ')
-				{
-					board[2][column] = player;
-					return true;
-				}
+				board[2][column] = player;
+				return true;
 			}
+		}
 
-		  return false;
+	  return false;
 	}
 
 	/*
