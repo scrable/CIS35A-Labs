@@ -169,6 +169,12 @@ public class TicTacToe{
 			System.out.println("Enter your move: ");
 			String move = in.next();
 
+			while(move.length() != 2)
+			{
+				System.out.println("Invalid move. Enter another move: ");
+				move = in.next();
+			}
+
 			while(!game.play(move))
 			{
 				System.out.println("Invalid move. Enter another move: ");
