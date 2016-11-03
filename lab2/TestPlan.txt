@@ -1,0 +1,5 @@
+1. Cannot fill the same space twice
+2. Can only win after a certain row has all spaces filled
+3. Cannot enter false input such as 4h or 1
+4. Cannot enter input that doesnt have strlen of 2
+5. Expect the correct player to win each time
